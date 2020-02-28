@@ -14,6 +14,7 @@ def matrix_mult(a, b):
     c_4 = a[1][0]*b[0][1] + a[1][1]*b[1][1]
     return [[c_1,c_2],[c_3,c_4]]
 
+
 def exponentiate_matrix(power, input_matrix):
     function_matrix = [[1,1],[1,0]]
     if power == 1:
@@ -32,16 +33,16 @@ def fib1_0(n):
         return 0
     else:
         return int((pow(phi, n))/5**0.5)
-    
-    
+
+
 def fib1_1(n):
     phi = (1+5**0.5)/2
     if n == 0:
         return 0
     else:
         return fast_power(phi, n)/5**0.5
-    
-    
+
+
 def fib2_1(n):
     phi = (1+5**0.5)/2
     phi_inverse = (1-5**0.5)/2
@@ -49,8 +50,8 @@ def fib2_1(n):
         return 0
     else:
         return (fast_power(phi, n)/2 - fast_power(phi, n)/2)/5**0.5
-    
-    
+
+
 def fast_power(value, power):
     if power == 1:
         return value
